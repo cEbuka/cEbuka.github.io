@@ -8,7 +8,7 @@ const day = document.getElementById("day").innerHTML = weekday[date.getDay()]
 //document.getElementById("day").innerHTML = currentDay.getDay();
 
 //Get UTC time
-function currentTime() {
+function time() {
     const d = new Date()
     let h = d.getUTCHours()
     let m = d.getUTCMinutes()
@@ -19,6 +19,6 @@ function currentTime() {
     s = (s < 10) ? "0" + s : s;
 
     document.getElementById("time").innerHTML = `${h}:${m}:${s}`
-    setTimeout(currentTime, 1000)
+    setTimeout(time, 1000)
 }
-currentTime();
+time()
