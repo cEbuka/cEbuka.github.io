@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Slack Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../index.css">
+    </head>
+    <body>
+        <section class="profile-container">
+            <div class="day-time">
+                <h1 id="time" data-testid="currentUTCTime"></h1>
+                <h1 id="day" data-testid="currentDayOfTheWeek"></h1>
+            </div>
+            <div class="profile">
+                <img class="profile_pic" src="./assets/profile_pic.png" alt="Simon Chukwuebuka" data-testid="slackDisplayImage" id="prof_img">
+                <h1 id="name" data-testid="slackUserName"></h1>
+                <h1 id="track" data-testid="myTrack"></h1>
+                <a href="https://github.com/cEbuka/HNGx?search=1" data-testid="githubURL" id="github_url" target="_blank">
+                    <img
+                    class="github-logo"
+                    src="./assets/github-mark.png"
+                    alt="githug logo"
+                    >
+                </a>
+            </div>
+        </section>
+        <script src="../index.js"></script>
+    </body>
+</html>

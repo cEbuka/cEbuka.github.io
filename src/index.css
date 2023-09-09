@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+    background: #1a314b;
+}
+
+/* flexible for profile and day-time */
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 80%;
+    border-radius: 1rem;
+    border: #000 solid 0.25rem;
+    background-color: #f8f8f9;
+}
+
+/* image styling */
+.profile_pic {
+    min-width: 100%;
+    max-height: 28.125rem;
+    border-radius: 1rem;
+}
+
+.github-logo {
+    width: 2rem;
+    height: 2rems;
+}
+
+/* flex items */
+.day-time {
+    display: flex;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.profile {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+/* h1 and anchor styles */
+h1 {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: #111439;
+    margin: 0.3125 auto;
+}
+
+a {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #111439;
+    margin: 0 auto;
+}
