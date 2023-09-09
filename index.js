@@ -1,5 +1,5 @@
-const profileName = document.getElementById("name").innerHTML = "Simon Chukwuebuka"
-const myTrack = document.getElementById("track").innerHTML = "Frontend"
+const profileName = document.getElementById("name").textContent = "Simon Chukwuebuka"
+const myTrack = document.getElementById("track").textContent = "Frontend"
 
 //Show current day
 const date = new Date();
@@ -9,9 +9,10 @@ const day = document.getElementById("day").innerHTML = weekday[date.getDay()]
 
 //Get UTC time
 function currentTime() {
-    let h = date.getUTCHours()
-    let m = date.getUTCMinutes()
-    let s = date.getUTCSeconds()
+    const d = new Date()
+    let h = d.getUTCHours()
+    let m = d.getUTCMinutes()
+    let s = d.getUTCSeconds()
 
     h = (h < 10) ? "0" + h : h;
     m = (m < 10) ? "0" + m : m;
