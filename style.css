@@ -6,11 +6,8 @@
 }
 
 :root {
-  --clr-secondary-100: hsl(254, 88%, 90%);
-  --clr-secondary-500: hsl(256, 67%, 59%);
-  --clr-primary-100: hsl(31, 66%, 93%);
-  --clr-primary-500: hsl(39, 100%, 71%);
-  --clr-black: hsl(0, 0%, 7%);
+  --clr-gray: hsl(0, 0%, 30%);
+  --clr-black: hsl(0, 0%, 10%);
   --clr-white: hsl(0, 0%, 100%);
 
   --xlg: 4rem;
@@ -34,14 +31,26 @@ body {
   background-color: var(--clr-white);
 }
 
+.portfolio {
+  display: grid;
+  gap: 1em;
+  border: 1px solid var(--clr-gray);
+  margin: 2rem;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 4rem;
+    
+  }
+}
+
 .profile {
   background-color: var(--clr-black);
+  padding-block: 2rem;
 }
 
 .profile-img-container {
   position: relative;
-  border-radius: rem;
-  background-color: aqua;
   width: 200px;
   height: 250px;
   margin-inline: auto;
@@ -50,22 +59,33 @@ body {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 0.2rem;
   }
 }
 
 .utc-time {
   background-color: var(--clr-white);
   font-size: var(--m-sm);
-  color: red;
+  color: var(--clr-black);
   position: absolute;
-  top: 0;
-  right: 0;
-  border-radius: 0.5rem;
-  padding: 0.2rem;
+  top: 0.2rem;
+  right: 0.2rem;
+  padding: 0.1rem 0.5rem;
 }
 
 .profile-socials {
+  display: flex;
+  gap: 1rem;
   background-color: var(--clr-white);
   position: absolute;
-  bottom: 1rem;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.2rem 0.8rem;
+}
+
+.about {
+  color: var(--clr-black);
+  padding: 1rem;
+  line-height: 1.5;
 }
