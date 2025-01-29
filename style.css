@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-secondary-100: hsl(254, 88%, 90%);
+  --clr-secondary-500: hsl(256, 67%, 59%);
+  --clr-primary-100: hsl(31, 66%, 93%);
+  --clr-primary-500: hsl(39, 100%, 71%);
+  --clr-black: hsl(0, 0%, 7%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --xlg: 4rem;
+  --lg: 2.75rem;
+  --med: 2.35rem;
+  --sm: 1.5rem;
+
+  /* mobile */
+  --m-xlg: 2rem;
+  --m-lg: 1.6rem;
+  --m-med: 1.3rem;
+  --m-sm: 1rem;
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --ff: "DM Sans", "sans serif";
+}
+
+body {
+  margin: 0;
+  background-color: var(--clr-white);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.profile {
+  background-color: var(--clr-black);
+}
+
+.profile-img-container {
+  position: relative;
+  border-radius: rem;
+  background-color: aqua;
+  width: 250px;
+  height: 250px;
+  margin-inline: auto;
+  padding-block: 1rem;
+
+  img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.utc-time {
+  width: auto;
+  background-color: var(--clr-white);
+  font-size: var(--m-sm);
+  color: red;
+  margin-top: 0.5rem;
+  position: absolute;
+  top: 0;
+}
