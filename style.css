@@ -32,9 +32,6 @@
 body {
   margin: 0;
   background-color: var(--clr-white);
-  display: grid;
-  place-content: center;
-  min-height: 100vh;
 }
 
 .profile {
@@ -45,24 +42,30 @@ body {
   position: relative;
   border-radius: rem;
   background-color: aqua;
-  width: 250px;
+  width: 200px;
   height: 250px;
   margin-inline: auto;
-  padding-block: 1rem;
 
   img {
     object-fit: cover;
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
   }
 }
 
 .utc-time {
-  width: auto;
   background-color: var(--clr-white);
   font-size: var(--m-sm);
   color: red;
-  margin-top: 0.5rem;
   position: absolute;
   top: 0;
+  right: 0;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+
+.profile-socials {
+  background-color: var(--clr-white);
+  position: absolute;
+  bottom: 1rem;
 }
