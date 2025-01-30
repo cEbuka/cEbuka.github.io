@@ -16,14 +16,28 @@
         <div class="profile-img-container">
           <img src="./assets/profile_pic.png" data-testid="profilePicture" />
           <div class="utc-time" id="time" data-testid="currentTimeUTC"></div>
-          <div class="profile-socials" data-testid="socialLinks">
-            <span class="fa fa-github"></span>
-            <span class="fa fa-linkedin" aria-hidden="true"></span>
-            <span class="fa fa-twitter">
-              <a href="https://x.com/ebukazky"></a>
-            </span>
-            <a href="mailto:danebuka20@gmail.com" class="fa fa-envelope"></a>
-          </div>
+          <ul class="profile-socials" data-testid="socialLinks">
+            <li>
+              <a href="https://github.com/cEbuka" target="_blank">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/ebukazky" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/" target="_blank"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:danebuka20@gmail.com" data-testid="emailAddress">
+                <i class="fa fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
         </div>
         <div class="location" data-testid="currentLocation">Enugu, Nigeria</div>
       </section>

@@ -32,6 +32,17 @@ body {
   font-family: var(--ff);
 }
 
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: var(--clr-white);
+  filter: contrast(200%);
+}
+
 .portfolio {
   display: grid;
   gap: 1em;
@@ -49,7 +60,6 @@ body {
   background-color: var(--clr-black);
   padding-block: 6.5rem;
   position: relative;
-  
 }
 
 .location {
@@ -86,7 +96,8 @@ body {
 .profile-socials {
   display: flex;
   gap: 0.5rem;
-  background-color: var(--clr-white);
+  background-color: var(--clr-black);
+  opacity: 0.7;
   position: absolute;
   bottom: 0.5rem;
   left: 50%;
@@ -98,7 +109,7 @@ body {
   display: grid;
   color: var(--clr-black);
   padding: 1rem;
-  padding-inline: 2rem ;
+  padding-inline: 2rem;
   text-align: center;
 }
 
@@ -118,6 +129,4 @@ body {
 .about p {
   margin-inline: auto;
   padding-inline: 2rem;
-
-
 }
