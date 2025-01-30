@@ -14,28 +14,31 @@
     <main class="portfolio">
       <section class="profile">
         <div class="profile-img-container">
-          <img src="./assets/profile_pic.png" />
-          <div class="utc-time">Hi there</div>
-          <div class="profile-socials">
+          <img src="./assets/profile_pic.png" data-testid="profilePicture" />
+          <div class="utc-time" id="time" data-testid="currentTimeUTC"></div>
+          <div class="profile-socials" data-testid="socialLinks">
             <span class="fa fa-github"></span>
             <span class="fa fa-linkedin" aria-hidden="true"></span>
-            <span class="fa fa-twitter"></span>
+            <span class="fa fa-twitter">
+              <a href="https://x.com/ebukazky"></a>
+            </span>
+            <a href="mailto:danebuka20@gmail.com" class="fa fa-envelope"></a>
           </div>
         </div>
-        
-       
+        <div class="location" data-testid="currentLocation">Enugu, Nigeria</div>
       </section>
       <section class="about">
-        <p>
-          Hi, I'm <span>Simon Chukwuebuka</span>, a
-          <span>Frontend developer</span> and Technical writer with a passion
-          for creating beautiful and functional user interfaces. I am proficient
-          in HTML, CSS, and JavaScript. I am also familiar with React, Node.js,
-          and Express.js. I write on frontend tools, new technologies,
-          programming with JavaScript, and how to get started in frontend
-          development
-        </p>
+        <h1>
+          Hi, I'm
+          <span class="name" data-testid="fullName">Simon Chukwuebuka</span>
+        </h1>
+        <h2>
+          - <span data-testid="jobTitle">Frontend Developer</span>, Technical
+          Writer
+        </h2>
+        <p class="about-me" data-testid="shortBio"></p>
       </section>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>
