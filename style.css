@@ -56,7 +56,6 @@ a {
 .portfolio {
   display: grid;
   gap: 1em;
-  /* min-height: 100vh; */
   border: 1px solid var(--clr-gray);
   margin: 0.8rem;
 
@@ -156,12 +155,12 @@ a {
   }
 }
 
-footer {
+.footer {
   display: flex;
   
 }
 
-footer > * {
+.footer > * {
   width: 10em;
   padding: 0.5rem 1rem;
   margin-inline: auto;
@@ -176,7 +175,7 @@ footer > * {
   }
 }
 
-footer > :first-child {
+.footer > :first-child {
   background-color: var(--clr-black);
 
   button {
@@ -185,7 +184,7 @@ footer > :first-child {
   }
 }
 
-footer > :last-child {
+.footer > :last-child {
   background-color: var(--clr-white);
 
   button {
