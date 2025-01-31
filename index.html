@@ -16,24 +16,35 @@
         <div class="profile-img-container">
           <img src="./assets/profile_pic.png" data-testid="profilePicture" />
           <div class="utc-time" id="time" data-testid="currentTimeUTC"></div>
-          <ul class="profile-socials" data-testid="socialLinks">
+          <ul class="profile-socials">
             <li>
-              <a href="https://github.com/cEbuka" target="_blank">
+              <a
+                href="https://github.com/cEbuka"
+                target="_blank"
+                data-testid="socialLinks"
+              >
                 <i class="fa fa-github"></i>
               </a>
             </li>
             <li>
-              <a href="https://x.com/ebukazky" target="_blank">
+              <a
+                href="https://x.com/ebukazky"
+                target="_blank"
+                data-testid="socialLinks"
+              >
                 <i class="fa fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com/" target="_blank"
+              <a
+                href="https://linkedin.com/"
+                target="_blank"
+                data-testid="socialLinks"
                 ><i class="fa fa-linkedin" aria-hidden="true"></i
               ></a>
             </li>
             <li>
-              <a href="mailto:danebuka20@gmail.com" data-testid="emailAddress">
+              <a href="mailto:danebuka20@gmail.com">
                 <i class="fa fa-envelope"></i
               ></a>
             </li>
@@ -53,6 +64,12 @@
         <p class="about-me" data-testid="shortBio"></p>
       </section>
     </main>
+    <footer>
+      <a href="mailto:danebuka20@gmail.com" target="_blank"
+        ><button data-testid="emailAddress">danebuka20@gmail.com</button></a
+      >
+      <a><button>Dev blog</button></a>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>

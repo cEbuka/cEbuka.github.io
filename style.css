@@ -14,7 +14,9 @@ html {
   --clr-black: hsl(0, 0%, 10%);
   --clr-white: hsl(0, 0%, 100%);
 
-  --fs: clamp(24px, calc(1.5rem + ((1vw - 6px) * 4.2254)), 34px);
+  --fs: clamp(24px, calc(1.5rem + ((1vw - 6px) * 4.2254)), 28px);
+  --med-fs: clamp(22px, calc(1.5rem + ((1vw - 6px) * 4.2254)), 24px);
+  --small-fs: clamp(18px, calc(1.5rem + ((1vw - 6px) * 4.2254)), 22px);
 
   --fw-400: 400;
   --fw-500: 500;
@@ -23,16 +25,27 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   background-color: var(--clr-white);
   font-family: var(--ff);
   line-height: 1.5;
-  font-size: var(--fs);
+  position: relative;
+  overflow: hidden;
 }
+
+/* body > * {
+  border: 2px solid red;
+} */
 
 a,
 li {
   text-decoration: none;
   list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
 }
 
 a {
@@ -48,7 +61,7 @@ a {
 
   @media screen and (min-width: 80em) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin: 0.5rem;
+    margin: 2.5rem;
   }
 }
 
@@ -103,11 +116,12 @@ a {
 
 .about {
   display: flex;
+  gap: 1em;
   flex-direction: column;
-  color: var(--clr-black);
+  color: var(--clr-gray);
   text-align: center;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     text-align: left;
   }
 }
@@ -123,15 +137,57 @@ a {
 
 .about h2 {
   font-weight: var(--fw-400);
-  font-size: var(--fs);
+  font-size: var(--med-fs);
+  padding-inline: 2rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .about p {
   margin-inline: auto;
   padding-inline: 2rem;
+  font-size: var(--small-fs);
 
-  
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     padding: 0;
+  }
+}
+
+footer {
+  display: flex;
+  
+}
+
+footer > * {
+  width: 10em;
+  padding: 0.5rem 1rem;
+  margin-inline: auto;
+  border: 1px solid var(--clr-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    width: 15em;
+    padding: 1rem 2rem;
+  }
+}
+
+footer > :first-child {
+  background-color: var(--clr-black);
+
+  button {
+    color: var(--clr-white);
+    font-weight: var(--fw-500);
+  }
+}
+
+footer > :last-child {
+  background-color: var(--clr-white);
+
+  button {
+    font-weight: var(--fw-500);
   }
 }
