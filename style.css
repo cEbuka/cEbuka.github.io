@@ -30,7 +30,6 @@ body {
   font-family: var(--ff);
   line-height: 1.5;
   position: relative;
-  overflow: hidden;
 }
 
 /* body > * {
