@@ -56,6 +56,7 @@ a {
 .portfolio {
   display: grid;
   gap: 1em;
+  /* min-height: 100vh; */
   border: 1px solid var(--clr-gray);
   margin: 0.8rem;
 

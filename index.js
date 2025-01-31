@@ -39,4 +39,4 @@ function TypewriterEffect(element, text, i = 0) {
   setTimeout(() => TypewriterEffect(element, text, i + 1), 50);
 }
 
-TypewriterEffect(p, p_text);
+// TypewriterEffect(p, p_text);
