@@ -140,8 +140,8 @@ a {
   transition:transform 0.3s;
 }
 
-.toggle:active {
-  transform: translateX(100%);
+.toggle.active {
+  transform: translateX(-100%);
 }
 
 .dark-mode {
@@ -153,7 +153,6 @@ a {
   display: flex;
   gap: 1em;
   flex-direction: column;
-  color: var(--clr-gray);
   text-align: center;
 
   @media screen and (min-width: 768px) {
