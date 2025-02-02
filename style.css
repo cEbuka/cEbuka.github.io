@@ -116,7 +116,7 @@ a {
 
 /* Dark mode */
 
-.dark-mode {
+.dark-mode-toggle {
   background-color: var(--clr-white);
   width: 60px;
   height: 30px;
@@ -126,11 +126,27 @@ a {
   border-radius: 10rem;
 }
 
-.dark-mode > * {
+.dark-mode-toggle > * {
   border-radius: 50%;
   background-color: var(--clr-black);
   width: 30px;
   height: 30px;
+  position: absolute;
+  right: 0;
+}
+
+.toggle {
+  border: none;
+  transition:transform 0.3s;
+}
+
+.toggle:active {
+  transform: translateX(100%);
+}
+
+.dark-mode {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
 }
 
 .about {
@@ -176,7 +192,6 @@ a {
 
 .footer {
   display: flex;
-  
 }
 
 .footer > * {

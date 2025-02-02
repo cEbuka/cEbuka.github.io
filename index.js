@@ -40,3 +40,11 @@ function TypewriterEffect(element, text, i = 0) {
 }
 
 // TypewriterEffect(p, p_text);
+
+// DARK MODE
+const toggle = document.querySelector(".toggle");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  toggle.classList.toggle("active");
+});
