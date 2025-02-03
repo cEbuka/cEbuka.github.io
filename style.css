@@ -85,7 +85,7 @@ a {
   }
 }
 
-.utc-time {
+/* .utc-time {
   background-color: var(--clr-white);
   font-size: var(--m-sm);
   color: var(--clr-black);
@@ -93,7 +93,7 @@ a {
   top: 0.2rem;
   right: 0.2rem;
   padding: 0.1rem 0.5rem;
-}
+} */
 
 .profile-socials {
   display: flex;
