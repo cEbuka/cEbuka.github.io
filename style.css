@@ -132,16 +132,16 @@ a {
   width: 30px;
   height: 30px;
   position: absolute;
-  right: 0;
+  left: 0;
 }
 
 .toggle {
   border: none;
-  transition:transform 0.3s;
+  transition:transform 0.3s ease-in;
 }
 
 .toggle.active {
-  transform: translateX(-100%);
+  transform: translateX(100%);
 }
 
 .dark-mode {
