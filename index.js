@@ -5,21 +5,21 @@ const p_text = `I have a passion for creating beautiful and functional user inte
           JavaScript. I am also familiar with React, Node.js, and Express.js. I
           write on frontend tools, new technologies, programming with
           JavaScript, and how to get started in frontend development`;
-//Get UTC time
-function time() {
-  const d = new Date();
-  let h = d.getUTCHours();
-  let m = d.getUTCMinutes();
-  let s = d.getUTCSeconds();
+// //Get UTC time
+// function time() {
+//   const d = new Date();
+//   let h = d.getUTCHours();
+//   let m = d.getUTCMinutes();
+//   let s = d.getUTCSeconds();
 
-  h = h < 10 ? "0" + h : h;
-  m = m < 10 ? "0" + m : m;
-  s = s < 10 ? "0" + s : s;
+//   h = h < 10 ? "0" + h : h;
+//   m = m < 10 ? "0" + m : m;
+//   s = s < 10 ? "0" + s : s;
 
-  utc_time.innerHTML = `${h}:${m}:${s}`;
-  setTimeout(time, 1000);
-}
-time();
+//   utc_time.innerHTML = `${h}:${m}:${s}`;
+//   setTimeout(time, 1000);
+// }
+// time();
 
 // Text reveal function
 function TypewriterEffect(element, text, i = 0) {
@@ -47,4 +47,5 @@ const toggle = document.querySelector(".toggle");
 toggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
   toggle.classList.toggle("active");
+  console.log("clicked")
 });
