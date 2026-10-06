@@ -19,7 +19,7 @@ body {
   line-height: 1.6;
 }
 a,
-h3 {
+h2 {
   color: var(--secondary);
   text-decoration: none;
 }
@@ -72,7 +72,7 @@ h3 {
   margin-top: 10px;
   font-size: 1.7rem;
   font-weight: 400;
-  color: #555;
+  color: var(--muted);
 }
 .hero-text {
   max-width: 570px;
@@ -224,7 +224,7 @@ h3 {
   margin-top: 20px;
 }
 .socials a {
-  color: #555;
+  color: var(--muted);
 }
 .socials a:hover {
   text-decoration: underline;
